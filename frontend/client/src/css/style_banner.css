@@ -1,0 +1,133 @@
+.slider {
+    width: 100%;
+    max-width: 1650px;
+    margin: 115px;
+    box-shadow: #c89971;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .slider img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .slides {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: #c89971;
+    border-radius: 20px;
+  }
+  
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+
+  .slide img {
+    width: 1650px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+  }
+  
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+
+  
+  .mais-vendidos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+  }
+  h2{
+    font-weight: normal;
+    font-size: 50px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  .livros-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .livro {
+    display: flex;
+    gap: 35px;
+    padding: 20px;
+  }
+  .nossa-historia {
+    margin: 30px;
+    background-color: #776247;
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: -300px;
+  }
+  
+  .nossa-historia button {
+    margin-top: 20px;
+    font-family: "Julius Sans One", sans-serif;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .nossa-historia button:hover {
+    background: #fff;
+    color: #7b634a;
+  }
+  .livros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DFD4C2;
+    border-radius: 20px;
+    padding: 15px;
+    width: 180px;
+  }
+  .livros img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .livros p {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #5a4231;
+    font-family: "Julius Sans One", sans-serif;
+  }

@@ -1,0 +1,110 @@
+body{
+    background-color: #FDF4E5;
+}
+.container_nav{
+    display: flex;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 250px 8fr 1fr 1fr 1fr 1fr;
+}
+.nav_logo {
+    width: 250px;   
+    height: auto;    
+  }
+  
+  .nav_logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+    .back-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('/frontend/client/src/images/bru.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.nav_livraria {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+}
+.nav_livraria a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  .nav_sobre {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+}
+.nav_sobre a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  .nav_login {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+}
+.nav_login a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav_carrinho {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 95px;           
+}
+.nav_carrinho a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  footer{
+    display: flex;
+    height: 400px;
+    background-color: #776247;
+  }
+
+  .container_footer {
+    height: 400px; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    box-sizing: border-box; 
+    color: #ffffff; 
+  }
+
+  h3{
+
+    display: grid;
+    font-size: 27px;
+    font-family: "Inclusive Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+  }
+  .redes_socias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
