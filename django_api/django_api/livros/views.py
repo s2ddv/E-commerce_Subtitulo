@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Livro
 
 from rest_framework import generics
 from .models import Genero, Livro
@@ -16,3 +18,6 @@ class LivroList(generics.ListCreateAPIView):
 class LivroDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Livro.objects.all()
     serializer_class = Livroserializer
+def livro_detalhado(request, id):
+    livro = get_object_or_404(Livro, id=id)
+    return render(request, 'livro_detalhado.html', {'livro': livro})
