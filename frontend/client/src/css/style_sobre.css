@@ -1,0 +1,157 @@
+body{
+    background-color: #FDF4E5;
+}
+.container_nav{
+    display: flex;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 250px 8fr 1fr 1fr 1fr 1fr;
+}
+.nav_logo {
+    width: 250px;   
+    height: auto;    
+  }
+  
+  .nav_logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .back-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('img/bru.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.nav_livraria {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+}
+.nav_livraria a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  .nav_sobre {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+}
+.nav_sobre a {
+    transition: 0.5s;
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: #c89971;
+    text-decoration: none;
+  }
+  .nav_login {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100px;           
+}
+.nav_login a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav_carrinho {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 95px;           
+}
+.nav_carrinho a {
+    font-size: 30px;
+    font-family: "Julius Sans One", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  footer{
+    display: flex;
+    height: 400px;
+    background-color: #776247;
+  }
+
+  .container_footer {
+    height: 400px; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    box-sizing: border-box; 
+    color: #ffffff; 
+  }
+
+  h3{
+
+    display: grid;
+    font-size: 27px;
+    font-family: "Inclusive Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+  }
+  .redes_socias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .titulo{
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+    color: #000;
+    font-weight: normal;
+    border-radius: 10px 10px 10px 10px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  #nossa{
+    font-size: 50px;
+  }
+  #historia{
+    font-size: 60px;
+  }
+  #container_historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFD4C2;
+    width: 1500px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  #titulo_historia {
+    font-family: "Libre Baskerville", serif;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #4b2e1f;
+    margin-bottom: 60px;
+  }
+  
+  #texto_historia {
+    font-family: "Libre Baskerville", serif;
+    font-size: 30px;
+    line-height: 1.5;
+    color: #4b2e1f;
+    max-width: 1000px;
+  }
