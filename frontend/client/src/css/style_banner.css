@@ -104,7 +104,7 @@
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.6s ease-in-out;
   }
   
   .nossa-historia button:hover {
