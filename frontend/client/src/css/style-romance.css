@@ -33,18 +33,44 @@ h1 {
     padding: 40px;
     gap: 55px;
     flex-direction: row;
+    overflow: hidden;
 }
 
-.livro { 
+.livro {
     background-color: #DFD4C2;
     padding: 10px;
     border-radius: 15px;
+    transform: translateY(20px);
+    transition: 
+        opacity 0.6s ease, 
+        transform 0.6s ease, 
+        scale 0.3s ease-in-out;
+}
+
+.livro.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.livro:hover {
+    transform: scale(1.1);
 }
 
 .livros img {
-    width: 250px;
-    height: 400px;
+    width: 200px;
+    height: 325px;
     border-radius: 5px;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.livros.blurred .livro {
+    filter: blur(4px);
+}
+
+.livros.blurred .livro.hovered {
+    filter: none;
 }
 
 .preco { 
