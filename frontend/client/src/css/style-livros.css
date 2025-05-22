@@ -1,5 +1,10 @@
 * {
     font-family: "Julius Sans One", sans-serif;
+    text-decoration: none;
+}
+
+a {
+    color: black;
 }
 
 .container { 

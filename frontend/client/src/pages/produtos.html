@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suspense | Subtítulo</title>
-    <link rel="icon" href="/frontend/client/src/images/icon.png">
-    <link rel="stylesheet" href="/frontend/client/src/css/style_nav.css">
-    <link rel="stylesheet" href="/frontend/client/src/css/style-livros.css">
+    <title>Carrinho - Subítulo</title>
+    <link rel="stylesheet" href="/frontend/client/src/css/style_produtos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -16,17 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="container_nav">
             <div class="nav_logo">
-                <a href="/frontend/client/src/pages/livraria.html" class="back-img">
+                <a href="/frontend/client/src/pages/index.html" class="back-img">
                 </a>
             </div>
             <div class="container_espacamento"></div>   
             <div class="nav_livraria">
-                <a href="/frontend/client/src/pages/index.html">LIVRARIA</a>
+                <a href="/frontend/client/src/pages/livraria.html">LIVRARIA</a>
             </div>
             <div class="nav_sobre">
                 <a href="/frontend/client/src/pages/sobre.html">SOBRE</a>
@@ -47,68 +46,32 @@
         
     </header>
 
-    <main>
-        <div class="container">
-            <div class="main-text">
-                <h2>NOSSOS LIVROS DE</h2>
-                <h1>SUSPENSE</h1>
-            </div>
-        </div>
+    <br><br><br><br>
 
-        <div class="main-content">
-            <div class="livros">
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_1.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_2.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_3.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_4.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_1.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_2.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_3.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_4.jpg">
-                    <p class="preco">R$46,49</p>   
-                </div>
-                
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_1.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_2.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_3.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-                <div class="livro">
-                    <img src="/frontend/client/src/images/livro_4.jpg">
-                    <p class="preco">R$46,49</p>
-                </div>
-            </div>
+    <div id="container_geral">
+    <div class="container">
+        <div class="capa_livro">
+            {% if livro.capa %}
+                <img src="{{ livro.capa.url }}" alt="Capa de {{ livro.titulo }}" style="max-width:300px;">
+            {% else %}
+                <p><em>Este livro não possui capa cadastrada.</em></p>
+            {% endif %}
         </div>
-    </main>
+        <div class="right-grid">    
+          <div class="box">
+            <p id="nome_livro">{{livro.nome}}</p>
+            <p class="preco">{{livro.preco}}</p>
+            </div>
+          <div class="button_carrinho">ADICIONAR AO CARRINHO</div>
+          <br><br><br><br>
+          <div class="button_comprar">COMPRAR</div>
+          <div class="informacoes_livros">
+            <p class="autor"><strong>Autor:</strong>{{livro.autor}}</p>
+            <p class="resumo"><strong>Resumo:</strong>{{livro.resumo}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <footer>
