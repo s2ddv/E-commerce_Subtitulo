@@ -47,9 +47,9 @@ h1 {
     border-radius: 15px;
     transform: translateY(20px);
     transition: 
-        opacity 0.6s ease, 
-        transform 0.6s ease, 
-        scale 0.3s ease-in-out;
+    opacity 0.6s ease, 
+    transform 0.6s ease, 
+    scale 0.3s ease-in-out;
 }
 
 .livro.show {
