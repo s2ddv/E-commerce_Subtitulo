@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from .models import Livro
+from django.http import JsonResponse
 
 from rest_framework import generics
 from .models import Genero, Livro
@@ -22,18 +23,15 @@ def livro_detalhado(request, id):
     livro = get_object_or_404(Livro, id=id)
     return render(request, 'livro_detalhado.html', {'livro': livro})
 
-def livros_romance(request): 
-    livros = Livro.objects.filter(categoria='romance')
-    return render(request, 'livros_categoria.html', {'livros': livros, 'categoria': 'Romance'})
-
-def livros_distopia(request):
-    livros = Livro.objects.filter(categoria='distopia')
-    return render(request, 'livros_categoria.html', {'livros': livros, 'categoria': 'Distopia'})
-
-def livros_fantasia(request):
-    livros = Livro.objects.filter(categoria='fantasia')
-    return render(request, 'livros_categoria.html', {'livros': livros, 'categoria': 'Fantasia'})
-
-def livros_suspense(request):
-    livros = Livro.objects.filter(categoria='suspense')
-    return render(request, 'livros_categoria.html', {'livros': livros, 'categoria': 'Suspense'})
+def livros_por_genero(request, genero): 
+    livros = Livro.objects.filter(genero__nome__iexact=genero)
+    data = [{
+        'id': livro.id,
+        'nome': livro.nome,
+        'autor': livro.autor,
+        'preco': livro.preco,
+        'imagem': livro.imagem.url if livro.imagem else '',
+    } 
+    for livro in livros
+    ]
+    return JsonResponse(data, safe=False)
