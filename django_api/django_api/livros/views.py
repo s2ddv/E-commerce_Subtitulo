@@ -21,7 +21,7 @@ class LivroDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = Livroserializer
 def livro_detalhado(request, id):
     livro = get_object_or_404(Livro, id=id)
-    return render(request, 'livro_detalhado.html', {'livro': livro})
+    return render(request, 'produtos.html', {'livro': livro})
 
 def livros_por_genero(request, genero): 
     livros = Livro.objects.filter(genero__nome__iexact=genero)
