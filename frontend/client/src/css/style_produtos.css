@@ -1,67 +1,74 @@
 body{
-    background-color: #FDF4E5;
+  background-color: #FDF4E5;
+  font-family: "Inter", sans-serif;
 }
 .container_nav{
-    display: flex;
-    display: grid;
-    height: 100px;
-    grid-template-columns: 250px 8fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  display: grid;
+  height: 100px;
+  grid-template-columns: 250px 8fr 1fr 1fr 1fr 1fr;
 }
 .nav_logo {
-    width: 250px;   
-    height: auto;    
-  }
-  
-  .nav_logo img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .back-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url('/frontend/client/src/images/bru.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-.nav_livraria {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100px;           
+  width: 250px;   
+  height: auto;    
 }
+  
+.nav_logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.back-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('/frontend/client/src/images/bru.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav_livraria {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;           
+}
+
 .nav_livraria a {
-    font-size: 30px;
-    font-family: "Julius Sans One", sans-serif;
-    color: black;
-    text-decoration: none;
-  }
-  .nav_sobre {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100px;           
+  font-size: 30px;
+  font-family: "Julius Sans One", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.nav_sobre {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;           
 }
 .nav_sobre a {
-    font-size: 30px;
-    font-family: "Julius Sans One", sans-serif;
-    color: black;
-    text-decoration: none;
-  }
-.nav_login {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100px;           
+  font-size: 30px;
+  font-family: "Julius Sans One", sans-serif;
+  color: black;
+  text-decoration: none;
 }
+
+.nav_login {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;           
+}
+
 .nav_login a {
   font-size: 30px;
   font-family: "Julius Sans One", sans-serif;
   color: black;
   text-decoration: none;
-  }
+}
 
 .nav_carrinho {
   display: flex;
@@ -69,14 +76,15 @@ body{
   align-items: center;     
   height: 95px;           
 }
+
 .nav_carrinho a {
   font-size: 30px;
   font-family: "Julius Sans One", sans-serif;
   color: black;
   text-decoration: none;
-  }
+}
 
-footer{
+footer {
   display: flex;
   height: 400px;
   background-color: #776247;
@@ -93,7 +101,7 @@ footer{
   color: #ffffff; 
 }
 
-h3{
+h3 {
   display: grid;
   font-size: 27px;
   font-family: "Inclusive Sans", sans-serif;
@@ -101,6 +109,7 @@ h3{
   align-items: center;
   font-weight: normal;
 }
+
 .redes_socias{
   display: flex;
   align-items: center;
@@ -113,12 +122,12 @@ h3{
 }
 
 .capa-livro { 
-  flex: 1;;
+  flex: 1;
   border-radius: 10px;
   margin-right: 10px;
   margin-top: 15px;
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,10 +157,59 @@ h3{
   text-align: center;
 }
 
-.nome_livro {
+.right-grid p { 
+  font-size: 20px;
+}
+
+.box-button { 
+  text-align: left;
+}
+
+.button_carrinho { 
+  border-radius: 10px;
+  padding: 20px 140px;
+  border: 1px solid #ccc;
+  background-color: #604432;
+  transition: background 0.4s, color 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.4s ease-in-out;
+}
+
+
+.button_carrinho:hover {
+  background-color: #776247;
+}
+
+.button_comprar { 
+  border-radius: 10px;
+  padding: 20px 192px;
+  border: 1px solid #ccc;
+  background-color: #604432;
+  transition: background 0.4s, color 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.4s ease-in-out;  
+}
+
+.button_comprar:hover { 
+  background-color: #776247;
+}
+
+.right-grid h1 {
   font-size: 24px;
 }
 
-.right-grid p, h2 { 
-  font-size: 18px;
+.right-grid p, h1 { 
+  text-align: left;
+}
+
+.informacoes_livros p { 
+  text-align: left;
+  display: block;
+  font-size: 16px;
+  word-wrap: break-word;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  width: 50%;
 }

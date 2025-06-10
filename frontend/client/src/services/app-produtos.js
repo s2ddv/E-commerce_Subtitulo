@@ -24,9 +24,9 @@ function renderLivro(livro){
         <div class="capa-livro">
             <img src="${imagemUrl}" alt="${livro.nome}"/>
         </div>
-        <h2>${livro.nome}</h2>
-        <>${livro.resumo}</ p>
-        <p class="preco"> R$ ${livro.preco}</p>
+        <h1>${livro.nome}</h1>
+        <p class="preco">R$${livro.preco}</p>
+        <p>${livro.resumo}</p>
         `
         container.appendChild(card);
     });

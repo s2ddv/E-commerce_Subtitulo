@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    //const genero = document.title.split(' | ')[0].toLowerCase();
 
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
@@ -17,19 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     const imagemUrl = `${livro.imagem}`;
                     livroDiv.innerHTML = `
                     <div id="livros" class="livros">    
-                        <div class="capa-livro">
-                            <img src="${imagemUrl}" alt="${livro.titulo}" style="max-width:300px;">
-                        </div>
+                            <div class="capa-livro">
+                                <img src="${imagemUrl}" alt="${livro.titulo}" style="max-width:300px;">
+                            </div>
                         <div class="right-grid">    
                             <div class="box">
-                                <p class="nome_livro">${livro.nome}</p>
-                                <p class="preco">${livro.preco}</p>
-                                <button class="button_carrinho">ADICIONAR AO CARRINHO</button>
-                                <br><br><br><br>
-                                <button class="button_comprar">COMPRAR</button>
+                                <h1 class="nome_livro">${livro.nome} - ${livro.autor}</h1>
+                                <p class="preco">R$${livro.preco}</p>
+                                <div class="box-button">
+                                    <button class="button_carrinho" onclick("adicionarAoCarrinho")>ADICIONAR AO CARRINHO</button>
+                                    <br><br>
+                                    <button class="button_comprar">COMPRAR</button>
+                                </div>
                                 <div class="informacoes_livros">
-                                    <p class="autor"><strong>Autor:</strong> ${livro.autor}</p>
-                                    <p class="resumo"><strong>Resumo:</strong> ${livro.resumo}</p>
+                                    <p class="resumo"><strong></strong> ${livro.resumo}</p>
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
                                 </div>
                             </div>
                         </div>
@@ -42,3 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Erro ao carregar livros:', error);
         });
 });
+
+function adicionarAoCarrinho(nome, preco) {
+    let carrinho =
+JSON.parse(localStorage.getItem('carrinho')) || 
+[];
+
+    const livros = carrinho.find(livros => livros.nome === nome);
+    if(livros) {
+        livros.quantidade += 1;
+    } else { 
+        carrinho.push({ nome, preco, quantidade: 1});
+    }
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+    alert(`${nome} adicionado ao carrinho!`)
+}

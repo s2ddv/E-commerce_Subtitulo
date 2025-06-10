@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     livroDiv.innerHTML = `
                         <a href="/frontend/client/src/pages/produtos.html?id=${livro.id}">
                             <img src="${imagemUrl}" alt="${livro.titulo}">
+                        <p class="nome-livro">${livro.nome}</p>
+                        <p class="autor-livro">${livro.autor}</p>
                         <p class="preco">R$${livro.preco}</p>
                     `;
                     container.appendChild(livroDiv);
