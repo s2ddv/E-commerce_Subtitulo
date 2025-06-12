@@ -1,0 +1,148 @@
+* { 
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: normal;
+}
+
+.container_carrinho {
+    margin: 120px;
+    min-height: 730px;
+    height: auto;
+    background-color: #DFD4C2;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 65px;
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    height: 30px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 50px;
+}
+
+hr {
+    background-color: #776247;
+    height: 1px;
+    border: none;
+    margin: 0;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.botao-comprar {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px; 
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.botao-comprar {
+    background-color: #fff;
+    margin-top: 20px;
+    font-family: "Julius Sans One", sans-serif;
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+  
+.botao-comprar:hover {
+    background: #fff;
+    color: #7b634a;
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    background-color: #776247;
+    width: 800px;
+    height: 300px;
+    padding: 15px 20px;
+    margin: 50px 50px;
+    border-radius: 8px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.product-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+  
+.product-info img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.categoria { 
+    color: hsl(0, 0%, 90%);
+    font-size: 20px;
+}
+
+.titulo { 
+    font-size: 24px;
+    margin-top: -20px;
+}
+
+.price { 
+    font-size: 24px;
+    margin-top: -65px;
+    padding: 0px 425px;
+}
+
+.quantity {
+    font-size: 24px;
+}
+
+.categoria, .titulo, .price, .quantity {
+    align-self: flex-start;
+}
+  
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #7b634a;
+}
+  

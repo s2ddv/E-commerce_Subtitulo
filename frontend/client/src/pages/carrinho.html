@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Subtítulo</title>
+    <link rel="icon" href="/frontend/client/src/images/icon.png">
+    <link rel="stylesheet" href="/frontend/client/src/css/style_nav.css">
+    <link rel="stylesheet" href="/frontend/client/src/css/style_carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container_nav">
+            <div class="nav_logo">
+                <a href="/frontend/client/src/pages/index.html" class="back-img">
+                </a>
+            </div>
+            <div class="container_espacamento"></div>   
+            <div class="nav_livraria">
+                <a href="/frontend/client/src/pages/livraria.html">LIVRARIA</a>
+            </div>
+            <div class="nav_sobre">
+                <a href="/frontend/client/src/pages/sobre.html">SOBRE</a>
+            </div>
+            <div class="nav_login">
+                <a href="/frontend/client/src/pages/log_in.html">
+                    <img src="/frontend/client/src/images/login.png" width="30px">
+                </a>
+                
+                <a href="/frontend/client/src/pages/log_in.html">LOGIN</a>
+            </div>
+            <div class="nav_carrinho">
+                <a href="/frontend/client/src/pages/carrinho.html">
+                    <img src="/frontend/client/src/images/carrinho.png" width="55px">
+                </a>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="container_carrinho">
+        <div class="titulo"> 
+            <h2>Carrinho</h2>
+        </div>
+        <div class="conteudo">
+            <div class="card">
+                <div class="product-info">
+                  <img src="/frontend/client/src/images/livro_8.jpg" alt="A Hipótese do Amor">
+                  <div class="product-textos">
+                    <p class="categoria">Romance</p>
+                    <p class="titulo">A Hipótese do Amor</p>
+                    <span class="price">R$45,03</span>
+                    <div class="quantity">
+                      <button class="btn">-</button>
+                      <span>1</span>
+                      <button class="btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div> 
+        <button class="botao-comprar">COMPRE AGORA</button>
+        </div>
+
+    <footer>
+        <div class="container_footer">
+            <div class="footer_informacoes">
+                <h3>Rua das Palavras, 123<br>Bairro Literário  São Paulo, SP<br>(11) 98765-4321<br>contato@subtitulo.com.br
+                    <br><br>
+                    <div class="redes_socias">
+                        <a href="..." alt="">
+                            <img src="/frontend/client/src/images/icon_twitter.png" alt="">
+                        </a>
+                        <a href="..." alt="Instagram">
+                            <img src="/frontend/client/src/images/icons8-instagram-50.png" alt="">
+                        </a>
+                        <a href="..." class="Facebook">
+                            <img src="/frontend/client/src/images/icons8-facebook-novo-50.png" alt="">
+                        </a>
+                        <div></div>
+                        <div></div>
+                    </div></h3>
+                
+            </div>
+            
+            <div class="footer_empresa">
+                <h3 class="empresa_escrita">© 2025 por Subtítulo. Criado e<br>protegido por Kesher
+                    <center><img src="/frontend/client/src/images/KESHER - Logo.png" width="200px">
+                </h3></center>
+            </div>
+        </div>
+    </footer>
+    <script src="/frontend/client/src/services/app-livro-carrinho.js"></script>
+</body>
+</html>
